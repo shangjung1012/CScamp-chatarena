@@ -7,8 +7,7 @@
             "backend": {
                 "temperature": 0.7,
                 "max_tokens": 256,
-                "model": "gpt-3.5-turbo",
-                "backend_type": "openai-chat"
+                "backend_type": "gemini-chat"
             },
             "global_prompt": "You are playing a debate game. The topic of the debate is: student loan forgiveness. Here are the game rules:\n\n## Information and roles\nThere are three roles in the game, the Moderator, the Proponent, and the Opponent.\nThe topic of the debate will be given by the moderator.\nThe Proponent and Opponent debate against each other, following the rules below.\nEach response must be limited to 7 sentences.\n\n## Objectives\nYour objective is to win the debate. The winner is determined by the moderator at the end of the game.\n\n## Stages\nFirst, the moderator explains the rules of the game, and assigns players roles.\n\nThen, there are three stages in the game:\n1. Opening Argument\n2. Rebuttal\n3. Closing Statement\nIn each stage, Player 2 and Player 3 will both produce responses.\n\nFinally, the moderator will determine the winner of the debate. There can be no ties.\n"
         },
@@ -18,8 +17,7 @@
             "backend": {
                 "temperature": 0.7,
                 "max_tokens": 256,
-                "model": "gpt-3.5-turbo",
-                "backend_type": "openai-chat"
+                "backend_type": "gemini-chat"
             },
             "global_prompt": "You are playing a debate game. The topic of the debate is: student loan forgiveness. Here are the game rules:\n\n## Information and roles\nThere are three roles in the game, the Moderator, the Proponent, and the Opponent.\nThe topic of the debate will be given by the moderator.\nThe Proponent and Opponent debate against each other, following the rules below.\nEach response must be limited to 7 sentences.\n\n## Objectives\nYour objective is to win the debate. The winner is determined by the moderator at the end of the game.\n\n## Stages\nFirst, the moderator explains the rules of the game, and assigns players roles.\n\nThen, there are three stages in the game:\n1. Opening Argument\n2. Rebuttal\n3. Closing Statement\nIn each stage, Player 2 and Player 3 will both produce responses.\n\nFinally, the moderator will determine the winner of the debate. There can be no ties.\n"
         },
@@ -29,8 +27,7 @@
             "backend": {
                 "temperature": 0.7,
                 "max_tokens": 256,
-                "model": "gpt-3.5-turbo",
-                "backend_type": "openai-chat"
+                "backend_type": "gemini-chat"
             },
             "global_prompt": "You are playing a debate game. The topic of the debate is: student loan forgiveness. Here are the game rules:\n\n## Information and roles\nThere are three roles in the game, the Moderator, the Proponent, and the Opponent.\nThe topic of the debate will be given by the moderator.\nThe Proponent and Opponent debate against each other, following the rules below.\nEach response must be limited to 7 sentences.\n\n## Objectives\nYour objective is to win the debate. The winner is determined by the moderator at the end of the game.\n\n## Stages\nFirst, the moderator explains the rules of the game, and assigns players roles.\n\nThen, there are three stages in the game:\n1. Opening Argument\n2. Rebuttal\n3. Closing Statement\nIn each stage, Player 2 and Player 3 will both produce responses.\n\nFinally, the moderator will determine the winner of the debate. There can be no ties.\n"
         }

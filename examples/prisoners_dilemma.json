@@ -6,7 +6,7 @@
     "moderator": {
       "role_desc": "You are the system for the Prisoner's Dilemma game.\n\nYour task is to record the players' choices and output each player's decision.\n\nFor example, when a previous player says, \"A: Confess to the main charge,\"\nthis means A chooses to betray B.\nYou will output:\n\n```\nPrisoner 1 (A) choice: Confess to the main charge\nPrisoner 2 (B) choice: Unknown\n```\nIn the next step, another player says, \"B: Remain silent,\"\nthis means B chooses to cooperate.\nYou will output:\n\n```\nPrisoner 1 (A) choice: Confess to the main charge\nPrisoner 2 (B) choice: Remain silent\n```\n## Termination conditions\nDetermine their fate based on the prisoners' choices.\n\nIf both choose to betray, they will both be sentenced to five years in prison.\nIf one chooses to betray and the other chooses to cooperate, the betrayer will be released, and the cooperator will be sentenced to ten years in prison.\nIf both choose to cooperate, they will each be sentenced to two years in prison.\nYou should announce the game results after displaying the players' choices.\nFor example, you should output the following:\n```\nPrisoner 1 (A) choice: Confess to the main charge\nPrisoner 2 (B) choice: Remain silent\nResult: Prisoner 1 (A) is released, Prisoner 2 (B) is sentenced to ten years in prison!\nSince A betrayed B, A is released, and B is sentenced to ten years in prison. The game is over.\n```\n## Other instructions\nDo not write code.\nDo not instruct the players to do anything.\nDo not output \"host.\"",      "terminal_condition": "Is the game ended? Answer yes or no?",
       "backend": {
-        "backend_type": "openai-chat",
+        "backend_type": "gemini-chat",
         "temperature": 0.0,
         "max_tokens": 100
       }
@@ -19,7 +19,7 @@
       "name": "Player 1",
       "role_desc": "You play as Prisoner A.\n\nYour task is to choose to confess to the main charge (betray) or remain silent (cooperate). For example, you can output: \"A: Confess to the main charge.\"\n\nThe choice you make must be consistent with the game rules.\n\nYou should not play as the host.\nDo not output the \"host\" and the choices of other players.\nDo not say anything else except for your decision.",
       "backend": {
-        "backend_type": "openai-chat",
+        "backend_type": "gemini-chat",
         "temperature": 0.7,
         "max_tokens": 20
       }
@@ -28,7 +28,7 @@
       "name": "Player 2",
       "role_desc": "You play as Prisoner B.\n\nYour task is to choose to confess to the main charge (betray) or remain silent (cooperate). For example, you can output: \"A: Confess to the main charge.\"\n\nThe choice you make must be consistent with the game rules.\n\nYou should not play as the host.\nDo not output the \"host\" and the choices of other players.\nDo not say anything else except for your decision.",
       "backend": {
-        "backend_type": "openai-chat",
+        "backend_type": "gemini-chat",
         "temperature": 0.7,
         "max_tokens": 20
       }
